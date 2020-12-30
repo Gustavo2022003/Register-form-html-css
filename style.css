@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    animation-name: moveToLeft;
+    animation-duration: 2.0s;
+}
+
+div#elemento {
+    overflow: hidden;
+    padding: 50px;
+    margin-top: 10%;
+    display: inline-block;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgb(31, 31, 31);
+}
+
+div#elemento2 {
+    overflow: hidden;
+    padding: 100px;
+    margin-top: 10%;
+    display: inline-block;
+    width: 500px;
+    height: 600px;
+    background-color: rgb(20, 20, 20);
+}
+
+h3#crie{
+    margin-top: 20px;
+    text-align: left;
+}
+
+input#inputp {
+    color: white;
+    padding-left: 20px;
+    margin-top: 20px;
+    float: center;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(20, 20, 20);
+    border: 0;
+    border-radius: 5px;
+}
+
+input#inputp:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+input#inputp:not(:hover){
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+
+input#inputp:focus{
+    outline: 0;
+    padding-left: 30px;
+    transform: scale(1.1);
+}
+
+
+button {
+    margin-top: 30px;
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color: rgb(119, 0, 255);
+    border: 0;
+    border-radius: 5px;
+}
+
+button:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+button:not(:hover){
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+
+button:focus {
+    background-color: rgb(90, 0, 192);
+    transition: 0.5s;
+    transform: scale(1.2);
+    border: 0;
+    outline: 0;
+}
+
+p#sucesso {
+    margin-top: 40px;
+}
+
+.center {
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
